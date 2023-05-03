@@ -1,9 +1,11 @@
 using System;
-
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Goodbye Sandbox World!");
+        Vehicle Ford = new Vehicle();  
+        Ford._color="Red";
+        Ford._maxSpeed=170;
+        Ford.DisplayInfo("F150");  
     }
 }
