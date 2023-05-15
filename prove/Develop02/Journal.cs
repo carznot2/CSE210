@@ -23,8 +23,9 @@ public class Journal
         foreach(Entry entry in entries)
         {
             Console.WriteLine(entry.Date);
-            Console.WriteLine(entry.Response);
             Console.WriteLine(entry.Prompt);
+            Console.WriteLine(entry.Response);
+            
 
         } 
     }
@@ -36,6 +37,6 @@ public class Journal
 
     public void Load()
     {
-        fileHandling.Load();
+        entries=fileHandling.Load();
     }
 }
